@@ -1,0 +1,7 @@
+services:
+  tamarin-latest:
+    image: luchinzzz/tamarin-prover:latest
+    container_name: tamarin-docker
+    build: .
+    ports:
+      - "3001:3001"
