@@ -7,6 +7,8 @@ ENV PATH="/root/.local/bin:$PATH"
 
 # Install base dependencies
 RUN apt-get update && apt-get install -y \
+    nodejs \
+    npm \
     build-essential \
     ca-certificates \
     curl \
@@ -17,7 +19,7 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libgmp-dev\
     && update-ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* 
 
 RUN apt-get update \
     && apt-get upgrade -y
@@ -29,6 +31,7 @@ RUN useradd -m -s /bin/bash user && \
     echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
     mkdir -p /home/user/.local/bin && \
     chown -R user:user /home/user/.local/ 
+    
 ENV PATH="/home/user/.local/bin:$PATH"
 
 # Install Stack
