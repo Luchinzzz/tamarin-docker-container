@@ -1,6 +1,6 @@
 services:
   tamarin-latest:
-    image: luchinzzz/tamarin-prover:latest
+    image: luchinzzz/tamarin-prover
     container_name: tamarin-docker
     build: .
     ports:
