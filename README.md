@@ -1,6 +1,6 @@
-# 🐵 Tamarin Docker Container
+# 🐵 :whale2: Tamarin Docker Container
 
-Docker container with the latest version of [Tamarin Prover](https://tamarin-prover.com/).
+Docker container with the latest version of [Tamarin Prover](https://tamarin-prover.com/) from Github repository. This Dockerfile builds the [luchinzzz/tamarin-prover](https://hub.docker.com/repository/docker/luchinzzz/tamarin-prover/general) image.
 
 ## 📝 Table of Contents
 * [Setup](#setup)
